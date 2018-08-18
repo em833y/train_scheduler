@@ -1,0 +1,26 @@
+body {
+	box-sizing: border-box;
+    background: url("thomas_the_tank_engine.png");
+    background-size: 150px 134px;
+
+}
+
+
+.box {
+	text-align: center;
+	/*creating gab at top of page*/
+	margin-top: 2%;
+
+}
+
+.input-group {
+	width: 100%;
+	margin-bottom: 2%;
+
+}
+
+.test {
+	overflow: scroll;
+    white-space: nowrap;
+}
+

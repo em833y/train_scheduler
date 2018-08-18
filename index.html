@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<html>
+<head>
+	<title>Trains Trains Trains</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no, target-densityDpi=device-dpi">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+	<link rel="stylesheet" type="text/css" href="train_scheduler_style.css">
+</head>
+<body>
+	<div class="container">
+			<div class="row">
+				<div class="col-xs-1">
+				</div>
+
+				<div class="col-xs-10">
+					<div class="jumbotron box">
+						<h1>Keep Calm</h1>
+                        <br>
+                        <img src="keep_calm_crown.png" alt="keep calm" style="height: 117px; width: 107px">
+                        <br>
+						<h2>Choo Choo!!!</h2>
+					</div>
+				</div>
+
+				<div class="col-xs-1">
+				</div>
+
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-xs-1">
+				</div>
+
+				<div class="col-xs-10 ">
+				<!-- Column that shows current train schedule -->
+					<div class="panel panel-primary">
+					<div class="panel-heading">Current Train Schedule</div>
+						<div class="panel-body test">
+							<table class="table test" id="trainTable">
+						  		<thead>
+						    	<tr>
+						      		<th><h4>Train Name</h4></th>
+						     		<th><h4>Destination</h4></th>
+									<th><h4>Frequency (min)</h4></th>
+									<th><h4>Next Arrival</h4></th>
+									<th><h4>Minutes Away</h4></th>
+								</tr>
+								</thead>
+								<tbody>
+								    <tr>
+								      <td></td>
+								      <td></td>
+								      <td></td>
+								    </tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-1">
+				</div>
+
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-xs-1">
+				</div>
+				
+				<div class="col-xs-10">
+				<!-- Column for adding train information -->
+					<div class="panel panel-primary">
+					<div class="panel-heading">Add Train</div>
+						<div class="panel-body">
+							<div class="input-group">
+								<label for="trainName">Train Name</label>
+								<input type="text" class="form-control" id="trainName" aria-describedby="basic-addon1">
+							</div>
+							
+							<div class="input-group">
+								<label for="destination">Destination</label>
+								<input type="text" class="form-control" id="destination" aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group">
+								<label for="firstTrain">First Train Time (HH:mm - military time)</label>
+								<input type="text" class="form-control" id="firstTrain" aria-describedby="basic-addon1">
+							</div>
+
+							<div class="input-group">
+								<label for="frequency">Frequency (min)</label>
+								<input type="text" class="form-control" id="frequency" aria-describedby="basic-addon1">
+							</div>
+							
+							<div class="btn-group">
+		  						<button type="button" id="submit" class="btn btn-primary btn-lg">Submit</button>
+
+		  					</div>
+		  				</div>
+					</div>
+				</div>
+	
+				<div class="col-xs-1">
+				</div>
+			</div>
+	</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="trainSchedulerJavascript.js">
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
